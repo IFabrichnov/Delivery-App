@@ -5,13 +5,14 @@
     <title>Delivery Food - доставка еды на дом</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="container">
     <!--Шапка сайта-->
     <header class="header">
-        <a href="index.html" class="logo">
+        <a href="index.html" class="logo wow fadeInRight">
             <img src="img/logo.svg" alt="Logo" class="logo">
         </a>
         <input type="text" class="input input-address" placeholder="Адрес доставки">
@@ -20,7 +21,7 @@
                 <img src="img/user.svg" alt="User logo" class="button-icon">
                 <span class="button-text">Войти</span>
             </button>
-            <button class="button">
+            <button class="button" id="card-button">
                 <img src="img/shoppingcart.svg" alt="shopping cart" class="button-icon">
                 <span class="button-text">Корзина</span>
             </button>
@@ -40,7 +41,7 @@
                 <input type="text" class="input input-search" placeholder="Поиск блюд и ресторанов">
             </div>
             <div class="cards">
-                <a href="restaurant.html" class="card">
+                <a href="restaurant.html" class="card wow fadeInUp" data-wow-delay="0.2s">
                     <img src="img/image1.jpg" alt="image1" class="card-image">
                     <div class="card-text">
                         <div class="card-heading">
@@ -61,7 +62,7 @@
                 </a>
                 <!-- /.card -->
 
-                <a href="restaurant.html" class="card">
+                <a href="restaurant.html" class="card wow fadeInUp" data-wow-delay="0.4s">
                     <img src="img/image2.jpg" alt="image1" class="card-image">
                     <div class="card-text">
                         <div class="card-heading">
@@ -82,7 +83,7 @@
                 </a>
                 <!-- /.card -->
 
-                <a href="restaurant.html" class="card">
+                <a href="restaurant.html" class="card wow fadeInUp" data-wow-delay="0.6s">
                     <img src="img/image3.jpg" alt="image1" class="card-image">
                     <div class="card-text">
                         <div class="card-heading">
@@ -103,7 +104,7 @@
                 </a>
                 <!-- /.card -->
 
-                <a href="restaurant.html" class="card">
+                <a href="restaurant.html" class="card wow fadeInUp" data-wow-delay="0.2s">
                     <img src="img/image4.jpg" alt="image1" class="card-image">
                     <div class="card-text">
                         <div class="card-heading">
@@ -124,7 +125,7 @@
                 </a>
                 <!-- /.card -->
 
-                <a href="restaurant.html" class="card">
+                <a href="restaurant.html" class="card wow fadeInUp" data-wow-delay="0.4s">
                     <img src="img/image5.jpg" alt="image1" class="card-image">
                     <div class="card-text">
                         <div class="card-heading">
@@ -145,7 +146,7 @@
                 </a>
                 <!-- /.card -->
 
-                <a href="restaurant.html" class="card">
+                <a href="restaurant.html" class="card wow fadeInUp" data-wow-delay="0.6s">
                     <img src="img/image6.jpg" alt="image1" class="card-image">
                     <div class="card-text">
                         <div class="card-heading">
@@ -190,6 +191,77 @@
         </div>
     </div>
 </footer>
+
+<div class="modal">
+    <div class="modal-dialog">
+        <div class="modal-header">
+            <h3 class="modal-title">Корзина</h3>
+            <button class="close">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="food-row">
+                <span class="food-name">Ролл угорь стандарт</span>
+                <strong class="food-price">250 Р</strong>
+                <div class="food-counter">
+                    <button class="counter-button">-</button>
+                    <span class="counter">1</span>
+                    <button class="counter-button">+</button>
+                </div>
+            </div>
+
+            <div class="food-row">
+                <span class="food-name">Ролл угорь стандарт</span>
+                <strong class="food-price">250 Р</strong>
+                <div class="food-counter">
+                    <button class="counter-button">-</button>
+                    <span class="counter">1</span>
+                    <button class="counter-button">+</button>
+                </div>
+            </div>
+
+            <div class="food-row">
+                <span class="food-name">Ролл угорь стандарт</span>
+                <strong class="food-price">250 Р</strong>
+                <div class="food-counter">
+                    <button class="counter-button">-</button>
+                    <span class="counter">1</span>
+                    <button class="counter-button">+</button>
+                </div>
+            </div>
+
+            <div class="food-row">
+                <span class="food-name">Ролл угорь стандарт</span>
+                <strong class="food-price">250 Р</strong>
+                <div class="food-counter">
+                    <button class="counter-button">-</button>
+                    <span class="counter">1</span>
+                    <button class="counter-button">+</button>
+                </div>
+            </div>
+
+            <div class="food-row">
+                <span class="food-name">Ролл угорь стандарт</span>
+                <strong class="food-price">250 Р</strong>
+                <div class="food-counter">
+                    <button class="counter-button">-</button>
+                    <span class="counter">1</span>
+                    <button class="counter-button">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <span class="price-tag">1250 Р</span>
+            <div class="footer-buttons">
+                <button class="button button-primary">Оформить заказ</button>
+                <button class="button">Отмена</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/wow.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
